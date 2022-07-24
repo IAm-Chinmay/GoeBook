@@ -1,11 +1,16 @@
 import React from "react";
+import {Alert} from 'react-bootstrap';
+
 import Useritem from './Useritem'
+import './Userlist.css'
 
 
 const Userlist = props => {
    if(props.items.length === 0){
     return( 
-    <h1>No User Found</h1>
+        <Alert className="alert-css" key='dark' variant='dark'>
+          NO USER FOUND !
+        </Alert>
     );
    };
 

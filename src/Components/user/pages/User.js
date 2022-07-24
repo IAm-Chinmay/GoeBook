@@ -3,7 +3,8 @@ import React from "react";
 import Userlist from '../components/Userlist';
 
 const User = () =>{
-   const  USER = [{id : 'u1' ,
+   const  USER = [
+    {id : 'u1' ,
     name : 'Chinmay Mulay' ,
      places : 3 ,
      image :"https://i.im.ge/2022/07/23/F73aHf.jpg",
