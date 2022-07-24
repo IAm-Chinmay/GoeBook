@@ -1,0 +1,27 @@
+*{
+    margin : 0px;
+    padding: 0px;
+}
+
+.Nav-css{
+    background-color: #d7dbdb;
+}
+
+.Navlinks-css-sign{
+   margin-left: auto;
+}
+.Navlinks-css{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.links-css{
+    text-decoration: none;
+   padding-left: 30px;
+   color: black;
+}
+
+.links-css:hover{
+    color: gray;
+}

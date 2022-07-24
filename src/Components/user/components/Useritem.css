@@ -1,0 +1,33 @@
+.body-class{
+    max-width: 540px;
+    border-radius:2px;
+}
+
+.in-card  :hover{
+    background-color: #d7dbdb;
+}
+
+
+
+.list-class{
+    padding: 2%;
+    list-style: none;
+    align-items: center;
+    margin-left:25% ;
+    margin-right: 25%;
+    align-items: center;
+}
+
+.center{
+    align-items: center;
+    align-text:center;
+}
+
+.links-css{
+        text-decoration: none;
+       color: black;
+    }
+    
+.links-css:hover{
+        color: gray;
+    }
