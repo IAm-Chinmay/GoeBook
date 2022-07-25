@@ -1,0 +1,28 @@
+.places-cards{
+    padding : 40px;
+    list-style: none;
+}
+
+img{
+    border-radius: 2%;
+}
+
+.button-list_css{
+    display: flex;
+    margin: auto;
+    margin-top: 16px;
+}
+
+.b1_css{
+    position: absolute;
+}
+
+.b2_css{
+    position: absolute;
+    left:1138px;
+}
+
+.b3_css{
+    position: relative;
+    left: 1213px;
+}

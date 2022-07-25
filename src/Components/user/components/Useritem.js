@@ -12,7 +12,8 @@ const Useritem = props =>{
             <img src={props.image} className="img-fluid rounded-start" alt={`user-pic`}/>
           </div>
           <div className="col-md-8">
-      <Link className="links-css" to="#u1/places">
+            
+      <Link className="links-css" to={`/${props.uid}/places`}>
             <div className="card-body">
               <h5 className="card-title">{props.name}</h5>
               <p className="card-text">{props.description}</p>
