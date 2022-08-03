@@ -13,7 +13,7 @@ const DUMMY_PLACE = [
         uid : 'u1',
         location : {
             lat :18.2346858,
-            long : 73.4442504
+            lng : 73.4442504
         },
     }  ,
      {
@@ -25,7 +25,7 @@ const DUMMY_PLACE = [
         uid : 'u2',
         location : {
             lat :28.656851,
-            long : 77.244873
+            lng : 77.244873
         },
     }
 ];

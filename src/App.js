@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import User from "./Components/user/pages/User";
 import UserPlaces from "./Components/places/pages/UserPlaces";
 import MainHeader from "./Components/Navigation/MainHeader/MainHeader";
+import NewPlaces from "./Components/places/pages/NewPlaces";
 
 import "./Components/user/components/Useritem.css";
 
@@ -17,7 +18,10 @@ const App = () => {
           <User />
         </Route>
         <Route path="/places">
-          <h1>Places</h1>
+        <UserPlaces/>
+        </Route>
+        <Route path="/newPlaces" exact>
+        <NewPlaces/>
         </Route>
         <Route path = "/:uid/places" exact>
           <UserPlaces/>

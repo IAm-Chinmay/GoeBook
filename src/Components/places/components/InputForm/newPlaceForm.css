@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.form-css{
+    margin: 44px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.form-button-lg{
+    margin-top : 26px;
+}

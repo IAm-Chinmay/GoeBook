@@ -25,7 +25,7 @@ const MainHeaderItem = props =>{
         <Link className="links-css" to = "/places"><Button variant="secondary">Places</Button></Link>
       </Nav>
         <Nav className="Navlinks-css-sign">
-        <Nav.Link className="links-css" href = "#NewPlace"><Button variant="secondary">New Place</Button></Nav.Link>
+       <Link className="links-css" to = "/newPlaces" > <Nav.Link className="links-css" href = "/newPlaces"><Button variant="secondary">New Place</Button></Nav.Link></Link>
         <Nav.Link  href = "#SignUp"> <Button variant="outline-secondary">SignUp</Button></Nav.Link>
         </Nav>
     </Container>
