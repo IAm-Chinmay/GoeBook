@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 
-import Userplacelist from "../components/Userplacelist";
+import Userplacelist from '../components/Userlist/Userplacelist';
 
 const DUMMY_PLACE = [
     {

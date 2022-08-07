@@ -2,13 +2,17 @@ import React , {useState} from "react";
 import {Card , Button , Modal} from 'react-bootstrap';
 
 import './Userplacelistitem.css'
+
+import UpdatePlaceForm from "../InputForm/UpdatePlaceForm";
 // import Map from './Map/Map';
 
 const Userplacelistitem = props =>{
-  // const [showModal,setShowModal] = useState(false);
+  const [showModal,setShowModal] = useState(false);
 
-  // const handleClose = () => setShowModal(false);
-  // const handleOpen = () => setShowModal(true);
+  const handleClose = () => setShowModal(false);
+  const handleOpen = () => setShowModal(true);
+
+
 
     return( 
 <>
@@ -23,24 +27,21 @@ const Userplacelistitem = props =>{
           <Card.Subtitle>{props.address}</Card.Subtitle>
           <div className="d-flex justify-content-around button-list_css">
           {/* <Button  variant = "outline-secondary" onClick={handleOpen}>Show On Map</Button> */}
-          <Button  variant="outline-info">EDIT</Button>
+          <Button onClick={handleOpen}  variant="outline-info">EDIT</Button>
           <Button  variant="outline-danger">DELETE</Button>
           </div>
         </Card.Body>
       </Card>
       </li>
 {/* // Modal */}
-{/* <Modal show={showModal} onHide={handleClose} centered>
+<Modal show={showModal} onHide={handleClose} centered>
       <Modal.Header>
-        <Modal.Title>{props.address}</Modal.Title>
+        <Modal.Title>Edit Place</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <Map center = {props.location} zoom ={16} width = {"100%"} height = {"100%"} />
+        <UpdatePlaceForm title={props.title} description = {props.description} />
       </Modal.Body>
-      <Modal.Footer>
-        <Button variant="secondary" onClick={handleClose}>Close</Button>
-      </Modal.Footer>
-</Modal> */}
+</Modal>
 </>
     );
 }

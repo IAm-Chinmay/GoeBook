@@ -4,7 +4,7 @@ import Userplacelistitem from './Userplacelistitem';
 import {Alert} from 'react-bootstrap';
 
 import './Userplacelist.css';
-import '../../user/components/Userlist.css'
+import '../../../user/components/Userlist.css';
 
 const Userplacelist = props => {
     if(props.items.length ===0){
