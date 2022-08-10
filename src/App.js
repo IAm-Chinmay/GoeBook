@@ -5,8 +5,9 @@ import User from "./Components/user/pages/User";
 import UserPlaces from "./Components/places/pages/UserPlaces";
 import MainHeader from "./Components/Navigation/MainHeader/MainHeader";
 import NewPlaces from "./Components/places/pages/NewPlaces";
+import AuthUser from "./Components/user/pages/AuthUser";
 
-import "./Components/user/components/Useritem.css";
+import "./Components/user/components/Users/Useritem.css";
 
 const App = () => {
   return (
@@ -25,6 +26,9 @@ const App = () => {
         </Route>
         <Route path = "/:uid/places" exact>
           <UserPlaces/>
+        </Route>
+        <Route path = "/auth">
+          <AuthUser/>
         </Route>
       </Switch>
       </main>

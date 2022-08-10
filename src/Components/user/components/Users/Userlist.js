@@ -1,7 +1,7 @@
 import React from "react";
 import {Alert} from 'react-bootstrap';
 
-import Useritem from './Useritem'
+import Useritem from './Useritem';
 import './Userlist.css'
 
 

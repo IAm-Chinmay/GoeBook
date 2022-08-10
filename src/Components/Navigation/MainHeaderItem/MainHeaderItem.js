@@ -9,7 +9,7 @@ const MainHeaderItem = props =>{
     return (
     <Navbar expand = "xl"  className="Nav-css">
       <Container>
-      <Link className="links-css" to="/">
+      <Link className="links-css icon-css" to="/">
         <img
           src="https://i.pinimg.com/474x/11/8a/28/118a28446543f559b54be37e995d0006.jpg"
           width="30"
@@ -21,12 +21,12 @@ const MainHeaderItem = props =>{
         <Navbar.Brand>GeoBook</Navbar.Brand>
       </Link>
       <Nav className="me-auto Navlinks-css">
-        <Link className="links-css" to = "/"><Button variant="secondary">Users</Button></Link>
-        <Link className="links-css" to = "/places"><Button variant="secondary">Places</Button></Link>
+        <Link className="links-css user-css" to = "/"><Button variant="secondary">Users</Button></Link>
+        <Link className="links-css place-css" to = "/places"><Button variant="secondary">Places</Button></Link>
       </Nav>
         <Nav className="Navlinks-css-sign">
         <Link className="links-css" to = "/newPlaces"><Button className="links-css" variant="secondary">New Place</Button></Link>
-        <Link  to = "#SignUp"> <Button variant="outline-secondary">SignUp</Button></Link>
+        <Link className="signUp-css" to = "/auth"> <Button variant="outline-secondary">SignUp</Button></Link>
         </Nav>
     </Container>
   </Navbar>

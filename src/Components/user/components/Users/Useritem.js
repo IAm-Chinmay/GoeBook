@@ -5,8 +5,8 @@ import './Useritem.css'
 
 const Useritem = props =>{
     return(
-        <li className="list-class ">
-        <div className="card mb-3 body-class" >
+        <li className="list-class " >
+        <div className="card mb-3 body-class card-style" >
         <div className="row g-0 in-card">
           <div className="col-md-4">
             <img src={props.image} className="img-fluid rounded-start" alt={`user-pic`}/>

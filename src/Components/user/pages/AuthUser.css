@@ -1,0 +1,21 @@
+*{
+    margin : 0;
+    padding : 0;
+}
+
+.center{
+    position: absolute;
+    top: 15vw;
+    left: 38vw; 
+
+}
+
+
+
+@media screen and (max-width : 600px){
+    .center{
+        position : absolute;
+        top: 35vh;
+        left: 6.5vh;
+    }
+}

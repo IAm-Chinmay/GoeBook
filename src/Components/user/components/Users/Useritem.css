@@ -4,10 +4,15 @@
 }
 
 .in-card  :hover{
-    background-color: #d7dbdb;
+    /* background-color: #d7dbdb; */
 }
 
-
+.card-style{
+    border-radius: 54px;
+background: linear-gradient(225deg, #cacaca, #f0f0f0);
+box-shadow:  -26px 26px 50px #949494,
+             26px -26px 50px #ffffff;
+}
 
 .list-class{
     padding: 2%;
@@ -29,5 +34,5 @@
     }
     
 .links-css:hover{
-        color: gray;
+        /* color: gray; */
     }

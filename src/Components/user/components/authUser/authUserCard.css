@@ -1,0 +1,13 @@
+.title-css{
+    margin: 2vh;
+    background-color: #c1c9c9;
+    border-radius: 25px;
+}
+
+.title-css h1 {
+    margin: 2vh;
+}
+
+.big-card{
+    padding: 1vh;
+}

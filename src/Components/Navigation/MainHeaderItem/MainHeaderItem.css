@@ -26,3 +26,57 @@
 .links-css:hover{
     color: gray;
 }
+
+@media screen and (max-width:500px) {
+    .links-css{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .Nav-css{
+        height: 25vh;
+    }
+
+    .icon-css{
+        position: absolute;
+        top: 3vh;
+        left:20vh
+    }
+
+    .user-css{
+        position: absolute;
+        top: 11vh;
+    }
+
+    .place-css{
+        position: absolute;
+        top: 19vh;
+    }
+
+    .signUp-css{
+        position: absolute;
+    top: 19vh;
+    }
+}
+
+@media screen and (max-width : 400px) {
+    .icon-css{
+        position: absolute;
+        top: 3vh;
+        left:15vh
+    }
+
+    .user-css{
+        position: absolute;
+        top: 10vh;
+    }
+
+    .place-css{
+        position: absolute;
+        top: 17vh;
+    }
+    .signUp-css{
+        position: absolute;
+    top: 17vh;
+    }
+}
