@@ -6,7 +6,6 @@ import './authUserForm.css';
 const AuthUserForm = () =>{
 
     const [validated, setValidated] = useState(false);
-    const [alert, setAlert] = useState(false);
 
     const submitHandler = event =>{
        
@@ -18,7 +17,6 @@ const AuthUserForm = () =>{
             }else{
               event.preventDefault(); 
               console.log('Logged In')
-                setAlert(true);
             }
             setValidated(true);
         
@@ -26,9 +24,7 @@ const AuthUserForm = () =>{
 
     return(
         <>
-        <Alert show={alert} variant='success'>
-            Logged In 
-        </Alert>
+        
         <Form noValidate validated = {validated} onSubmit={submitHandler}>
         <FloatingLabel
         controlId="floatingInput"

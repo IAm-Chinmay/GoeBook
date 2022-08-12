@@ -1,0 +1,17 @@
+.heading{
+    top: 16vh;
+    position: absolute;
+    left: 82vh;
+}
+
+.form-body{
+    margin: 16vh;
+    border: 3px solid gray;
+    padding: 3vh;
+}
+
+.switch-css{
+    position: absolute;
+    top: 80vh;
+    left: 85vh;
+}

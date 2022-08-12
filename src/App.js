@@ -6,6 +6,7 @@ import UserPlaces from "./Components/places/pages/UserPlaces";
 import MainHeader from "./Components/Navigation/MainHeader/MainHeader";
 import NewPlaces from "./Components/places/pages/NewPlaces";
 import AuthUser from "./Components/user/pages/AuthUser";
+import SignUser from "./Components/user/pages/SignUser";
 
 import "./Components/user/components/Users/Useritem.css";
 
@@ -29,6 +30,9 @@ const App = () => {
         </Route>
         <Route path = "/auth">
           <AuthUser/>
+        </Route>
+        <Route path = "/SignUp">
+          <SignUser/>
         </Route>
       </Switch>
       </main>

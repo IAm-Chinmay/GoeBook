@@ -10,7 +10,11 @@
 
 }
 
-
+.switch-css{
+    position: absolute;
+    top: 80vh;
+    left: 85vh;
+}
 
 @media screen and (max-width : 600px){
     .center{
