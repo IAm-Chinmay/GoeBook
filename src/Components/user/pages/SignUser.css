@@ -15,3 +15,11 @@
     top: 80vh;
     left: 85vh;
 }
+
+@media screen and (max-width : 600px){
+    .heading{
+        top: 30vh;
+        position: absolute;
+        left: 21vh;
+    }
+}

@@ -45,7 +45,7 @@
 
     .user-css{
         position: absolute;
-        top: 11vh;
+        top: 40vh;
     }
 
     .place-css{
@@ -55,7 +55,13 @@
 
     .signUp-css{
         position: absolute;
-    top: 19vh;
+         top: 10vh;
+         left: 40vh;
+    }
+
+    .logout-css{
+        position: absolute;
+        top: 17vh;
     }
 }
 
@@ -63,7 +69,7 @@
     .icon-css{
         position: absolute;
         top: 3vh;
-        left:15vh
+        left:19vh
     }
 
     .user-css{
@@ -77,6 +83,6 @@
     }
     .signUp-css{
         position: absolute;
-    top: 17vh;
+    top: 10vh;
     }
 }

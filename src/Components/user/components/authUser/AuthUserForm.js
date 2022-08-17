@@ -1,11 +1,15 @@
-import React , {useState} from 'react';
-import {Form , FloatingLabel , Button , Alert} from 'react-bootstrap';
+import React , {useState , useContext} from 'react';
+import {Form , FloatingLabel , Button } from 'react-bootstrap';
 
 import './authUserForm.css';
+
+import { AuthContext } from '../../../Elements/AuthContext';
 
 const AuthUserForm = () =>{
 
     const [validated, setValidated] = useState(false);
+
+    const auth = useContext(AuthContext);
 
     const submitHandler = event =>{
        
@@ -17,8 +21,11 @@ const AuthUserForm = () =>{
             }else{
               event.preventDefault(); 
               console.log('Logged In')
+              auth.login();
             }
             setValidated(true);
+
+           
         
     }
 

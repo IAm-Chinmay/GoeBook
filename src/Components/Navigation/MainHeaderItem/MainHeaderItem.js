@@ -1,11 +1,20 @@
-import React from "react";
+import React , {useContext} from "react";
 import {Link} from 'react-router-dom';
 import {Navbar,Button ,Nav, Container} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import './MainHeaderItem.css';
 
+import { AuthContext } from "../../Elements/AuthContext";
 
 const MainHeaderItem = props =>{
+
+  const auth = useContext(AuthContext);
+
+  const onLogOutHandler = () =>{
+      auth.logout();
+  }
+
     return (
     <Navbar expand = "xl"  className="Nav-css">
       <Container>
@@ -15,18 +24,27 @@ const MainHeaderItem = props =>{
           width="30"
           height="30"
           className="d-inline-block align-top"
-          alt="React Bootstrap logo"
+          alt="Web Logo"
         />
         <Navbar.Text> </Navbar.Text>
         <Navbar.Brand>GeoBook</Navbar.Brand>
       </Link>
       <Nav className="me-auto Navlinks-css">
         <Link className="links-css user-css" to = "/"><Button variant="secondary">Users</Button></Link>
-        <Link className="links-css place-css" to = "/places"><Button variant="secondary">Places</Button></Link>
+        {auth.isLoggedIn &&
+        <Link className="links-css place-css" to = "/places"><Button variant="secondary">My Places</Button></Link>
+        }
       </Nav>
         <Nav className="Navlinks-css-sign">
+          {auth.isLoggedIn &&
         <Link className="links-css" to = "/newPlaces"><Button className="links-css" variant="secondary">New Place</Button></Link>
+      }
+      {!auth.isLoggedIn &&
         <Link className="signUp-css" to = "/auth"> <Button variant="outline-secondary">SignUp</Button></Link>
+      }
+      {auth.isLoggedIn &&
+        <Button className="logout-css" onClick={onLogOutHandler} variant="outline-secondary">LogOut</Button>
+      }
         </Nav>
     </Container>
   </Navbar>

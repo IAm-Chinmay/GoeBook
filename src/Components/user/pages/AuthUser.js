@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import AuthUserCard from "../components/authUser/AuthUserCard";
 import Switch from "../../Elements/Switch";
@@ -15,7 +15,7 @@ const AuthUser = props =>{
        <AuthUserCard/>
        </div>
        <div className="switch-css">
-       <Switch toGo = 'Sign' at = 'Log'  goToPage = '/SignUp'/>
+       <Switch className="switch-css-2" toGo = 'Sign' at = 'Log'  goToPage = '/SignUp'/>
        </div>
        </>
     )

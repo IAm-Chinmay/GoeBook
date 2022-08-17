@@ -1,9 +1,10 @@
-import React , {useState} from "react";
+import React , {useState , useContext} from "react";
 import {Card , Button , Modal } from 'react-bootstrap';
 
 import './Userplacelistitem.css'
 
 import UpdatePlaceForm from "../InputForm/UpdatePlaceForm";
+import { AuthContext } from "../../../Elements/AuthContext";
 // import Map from './Map/Map';
 
 const Userplacelistitem = props =>{
@@ -22,6 +23,8 @@ const Userplacelistitem = props =>{
    
   }
 
+  const auth = useContext(AuthContext);
+
     return( 
 <>
         <li className="places-cards">
@@ -35,8 +38,12 @@ const Userplacelistitem = props =>{
           <Card.Subtitle>{props.address}</Card.Subtitle>
           <div className="d-flex justify-content-around button-list_css">
           {/* <Button  variant = "outline-secondary" onClick={handleOpen}>Show On Map</Button> */}
+          {auth.isLoggedIn &&
           <Button onClick={handleEditOpen} variant = "info"  >EDIT</Button>
+          }
+        {auth.isLoggedIn &&
           <Button onClick={handleDeleteOpen} variant = "danger"  >DELETE</Button>
+        }
           </div>
         </Card.Body>
       </Card>
